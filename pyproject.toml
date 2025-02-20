@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "yuallm"
+version = "0.2.0"
+description = "LLM router and orchestrator — intelligently routes prompts to Grok, Anthropic, OpenAI, or Groq based on task type, cost, and quality."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "yuallm-dev", email = "yuallm-dev@users.noreply.github.com" }
+]
+keywords = ["llm", "router", "grok", "anthropic", "openai", "ai", "orchestrator"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Developers",
+]
+
+dependencies = [
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/yuallm-dev/YuaLLM"
+Repository = "https://github.com/yuallm-dev/YuaLLM"
+Issues = "https://github.com/yuallm-dev/YuaLLM/issues"
+
+[project.scripts]
+yua = "yua.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["yua*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
