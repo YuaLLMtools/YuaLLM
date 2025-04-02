@@ -18,6 +18,16 @@
   <img src="https://img.shields.io/badge/providers-Grok%20%7C%20Anthropic%20%7C%20OpenAI%20%7C%20Groq-6366f1" alt="Providers" />
 </p>
 
+<p align="center">
+  <a href="https://pump.fun/coin/o1u4V1yZaKR85qwghmBvyBPqHs6EHjCUVVE8HEbpump">
+    <img src="https://img.shields.io/badge/%24YLLM-o1u4V1yZ...HEbpump-9945FF?style=for-the-badge&logo=solana&logoColor=white" alt="$YLLM CA" />
+  </a>
+</p>
+
+<p align="center">
+  <code>$YLLM &nbsp;|&nbsp; o1u4V1yZaKR85qwghmBvyBPqHs6EHjCUVVE8HEbpump</code>
+</p>
+
 <br/>
 
 <p align="center">
